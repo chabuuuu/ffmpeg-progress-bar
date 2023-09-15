@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resize Video</title>
+</head>
+<body>
+  <h1>Resize Video</h1>
+  <form action="/resize" method="POST" enctype="multipart/form-data">
+    <label for="video">Upload a video:</label>
+    <input type="file" name="video" accept="video/*" required>
+    <label for="width">Width:</label>
+    <input type="number" name="width" placeholder="Width (default: 640)">
+    <label for="height">Height:</label>
+    <input type="number" name="height" placeholder="Height (default: 480)">
+    <button type="submit">Resize</button>
+  </form>
+</body>
+</html>
