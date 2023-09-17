@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-bar",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "PROGRESS BAR CLI FOR FFMPEG NODEJS",
   "main": "lib/main.js",
   "scripts": {

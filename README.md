@@ -37,3 +37,4 @@ Comming soon
 ## <a name="author"/></a> Author
 
 [chabuuuu](https://github.com/chabuuuu)
+[Npm package](https://www.npmjs.com/package/ffmpeg-bar)
