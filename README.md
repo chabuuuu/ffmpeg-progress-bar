@@ -22,10 +22,25 @@ $ npm i ffmpeg-bar
 ```
 
 ## <a name="usage"/></a> Usage
-###### Examples
+###### 
 ```bash
 import { FfmpegProgressBar } from 'ffmpeg-bar';
-ffmpegProgressBar.exec(yourArgsFfmpegCommand);
+    const bar = new FfmpegProgressBar(yourInputFilePath)
+    await bar.exec(command);
+    //command: your args ffmpeg command
+    //ex: ffmpeg -i input.mp4 -vf scale=200:300 output.mp4 -> ['-i', 'input.mp4', '-vf', 'scale=200:300', 'output.mp4']
+```
+```bash
+import { FfmpegProgressBar } from 'ffmpeg-bar';
+    const bar = new FfmpegProgressBar('input.mp4')
+    const command = [
+      '-i',
+      'input.mp4',
+      '-vf',
+      `scale=200:300`,
+      'output.mp4',
+  ];
+    await bar.exec(command);
 ```
 ## <a name="configuration"/></a> Configuration
 
